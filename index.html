@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>بازی ساعت</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="question"></h2>
+
+<canvas id="clock" width="320" height="320"></canvas>
+
+<div class="inputs">
+  ساعت:
+  <input id="hour" type="number" min="1" max="12">
+  دقیقه:
+  <input id="minute" type="number" min="0" max="59">
+</div>
+
+<div class="buttons">
+  <button onclick="checkAnswer()">ثبت پاسخ</button>
+  <button onclick="nextLevel()">مرحله بعد</button>
+</div>
+
+<p id="message"></p>
+
+<audio id="cheer" src="cheer.wav"></audio>
+<audio id="wrong" src="wrong.wav"></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
